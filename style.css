@@ -1,0 +1,294 @@
+h1 {
+    font-size: 5em; /* Tamaño grande de la fuente */
+    font-family: 'Impact', sans-serif; /* Fuente audaz y contundente */
+    font-weight: bold; /* Peso de la fuente en negrita */
+    color: transparent; /* El texto será transparente para ver el gradiente de fondo */
+    background: linear-gradient(45deg, #ff007f, #ff9900, #00ffcc); /* Gradiente de varios colores vibrantes */
+    background-clip: text; /* El gradiente se aplica solo al texto */
+    -webkit-background-clip: text; /* Para asegurar compatibilidad en WebKit */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir todo el texto a mayúsculas */
+    letter-spacing: 4px; /* Espaciado entre las letras */
+    padding: 20px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6), 0 0 10px rgba(0, 0, 0, 0.8), 0 0 15px rgba(255, 0, 0, 0.8); /* Sombra intensa */
+    transition: transform 0.3s ease, text-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+h1:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del texto al hacer hover */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(255, 0, 0, 1); /* Aumenta la sombra al pasar el ratón */
+}
+
+h2 {
+    font-size: 4em; /* Tamaño grande de la fuente */
+    font-family: 'Poppins', sans-serif; /* Fuente moderna y limpia */
+    font-weight: bold; /* Peso de la fuente en negrita */
+    color: transparent; /* El texto será transparente para ver el gradiente de fondo */
+    background: linear-gradient(45deg, #ff007f, #ff9900, #00ffcc); /* Gradiente de colores vibrantes */
+    background-clip: text; /* El gradiente se aplica solo al texto */
+    -webkit-background-clip: text; /* Para asegurar compatibilidad en WebKit */
+    text-align: center; /* Centrar el texto */
+    text-transform: uppercase; /* Convertir todo el texto a mayúsculas */
+    letter-spacing: 4px; /* Espaciado entre las letras */
+    padding: 15px; /* Espaciado interno */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5), 0 0 10px rgba(0, 0, 0, 0.6), 0 0 15px rgba(255, 0, 0, 0.6); /* Sombra fuerte */
+}
+
+
+p {
+    display: flex; /* Usamos Flexbox para organizar el contenido en fila (horizontales) */
+    align-items: center; /* Centra el contenido verticalmente (texto y gif) */
+    gap: 15px; /* Espacio entre el texto y el gif */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ffffff; /* Borde simple */
+    border-radius: 5px; /* Bordes redondeados */
+    background-color: rgba(0, 0, 0, 0.2); /* Fondo sutil */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #f5f5f5; /* Color del texto */
+}
+
+p img {
+    width: 50px; /* Tamaño del gif */
+    height: 50px; /* Tamaño del gif */
+    border-radius: 5px; /* Bordes redondeados en el gif */
+}
+
+
+
+
+p {
+    border: 1px solid #f23a40;  /* Borde delgado de 1px en color blanco */
+    padding: 1px;
+    margin: 1px 0;
+    border-radius: 0px;  /* Bordes redondeados para suavizar el borde */
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);  /* Sombra suave debajo del borde */
+    color: #f5f5f5;  /* Color del texto */
+    transition: all 0.3s ease;  /* Transición suave */
+}
+
+p:hover {
+    border-color: #060601;  /* Cambio de color del borde al hacer hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);  /* Aumenta la sombra al hacer hover */
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(#530303,#0e0607);
+    font-family: 'Roboto', sans-serif;
+    color: #fcfcfb;
+    text-align: center;
+    padding: 20px;
+}
+
+
+body > * {
+    border: 2px solid #090801; 
+    border-radius: 10px; 
+    padding: 15px;
+    margin: 10px auto; 
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4); 
+    max-width: 1200px; 
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+header {
+    background-color: rgb(253, 252, 252);
+    background-image: url(https://i.pinimg.com/originals/77/48/5c/77485ceb6d45fa71cfc6301cfb2cb215.gif);
+}
+
+header .logo {
+    margin: 0;
+    padding: 80px 50px;
+    font-weight: bold;
+    color: rgb(242, 64, 24);
+    font-size: 1.6em;
+}
+
+header.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul {
+    background-color: #77050a;
+    width: 100%;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline-flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(252, 252, 250);
+    padding: 15px 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #8e0000;
+    border-radius: 5px;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(102, 3, 6, 0.5),
+        rgb(0, 0, 0, 0.5)
+    ),
+    url("cine.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: rgb(88, 9, 5);
+}
+
+#hero h1 {
+    font-size: 3.5em;
+    text-shadow: 2px 2px 10px rgba(252, 249, 249, 0.7);
+    margin: 0;
+}
+
+.section {
+    background-color: rgb(242, 241, 245);
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 50%;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(245, 243, 243, 0.5);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: scale(1.05);
+}
+
+.section img {
+    width: 200px;
+    border-radius: 30px;
+    border: dashed 3px white;
+}
+
+.section h2 {
+    margin: 0;
+    color: red;
+    font-size: 2em;
+}
+
+.section p {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+
+.popular {
+    padding: 80px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 35px;
+    margin-bottom: 45px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+
+.popular-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    justify-items: center;
+    margin-top: 30px;
+}
+
+.popular-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.popular-content img:hover {
+    transform: scale(1.1);
+}
+
+button {
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: rgb(95, 15, 2);
+    background-color: rgb(154, 30, 6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: rgb(234, 227, 239);
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+h1 {
+    font-size: 3.5em; 
+    color: #ff5733; 
+}
+
+h2 {
+    font-size: 2.5em; 
+    color: #090a01;
+}
+
+p {
+    font-size: 1.1em; 
+    color: #f5f5f5; 
+}
+
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+        color: #ffcc00; 
+    }
+
+    h2 {
+        font-size: 2em;
+        color: #d40000;
+    }
+
+    p {
+        font-size: 1em;
+        color: #ffffff; 
+    }
+}
